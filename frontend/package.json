@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "scripts": {
     "start": "webpack serve --open --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist"
   },
-  "dependencies": {},
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.2",
