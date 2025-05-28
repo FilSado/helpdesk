@@ -1,12 +1,10 @@
 version: 1.0.{build}
 
 install:
-  - cd frontend
-  - npm install
+  - cmd: cd frontend && npm install
 
 build_script:
-  - cd frontend
-  - npm run build
+  - cmd: cd frontend && npm run build
 
 artifacts:
   - path: frontend/dist
