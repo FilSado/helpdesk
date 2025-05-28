@@ -1,13 +1,7 @@
 version: 1.0.{build}
 
-environment:
-  nodejs_version: '18'
-
 install:
-  - ps: Install-Product node $env:nodejs_version
   - cd frontend
-  - npm install
-  - cd ../backend
   - npm install
 
 build_script:
@@ -24,6 +18,5 @@ deploy:
     secure: ${env:GITHUB_TOKEN}
   repo: FilSado/helpdesk
   branch: gh-pages
-  folder: dist
+  folder: frontend/dist
   message: 'Deploy from Appveyor build %APPVEYOR_BUILD_NUMBER%'
-
