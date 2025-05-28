@@ -1,4 +1,5 @@
 ```markdown
 # HelpDesk
 
-[https://ci.appveyor.com/api/projects/status/<project_id>?svg=true](https://ci.appveyor.com/project/FilSado/helpdesk)
+[![Build status](https://ci.appveyor.com/api/projects/status/xy97b0r9qex9ahav?svg=true)](https://ci.appveyor.com/project/FilSado/helpdesk)
+```

@@ -19,9 +19,11 @@ artifacts:
     name: dist
 
 deploy:
-  provider: Pages
-  token:
-    secure: <%GITHUB_TOKEN%> # Нужно добавить секретный токен в Appveyor
+  provider: GitHubPages
+  auth_token:
+    secure: ${env:GITHUB_TOKEN}
+  repo: FilSado/helpdesk
   branch: gh-pages
-  folder: frontend/dist
-  message: 'Deploy HelpDesk frontend to GitHub Pages'
+  folder: dist
+  message: 'Deploy from Appveyor build %APPVEYOR_BUILD_NUMBER%'
+
